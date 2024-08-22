@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Assignment</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/146cca6ef2.js" crossorigin="anonymous"></script>
+    <!-- t & d -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+
+        .background-image {
+            background-image: linear-gradient(0.00deg, rgba(255, 255, 255), rgba(255, 255, 255, 0), 100%);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'color-home': 'rgb(73, 73, 73)',
+                        'color-services': 'rgb(115, 115, 115)',
+                        'color-green': 'rgb(171, 239, 95)',
+                        'color-green2': 'rgba(171, 239, 95, 0.5)',
+                        'color-arrow': 'rgba(171, 239, 95)',
+                        'color-main': 'rgba(30, 30, 30)',
+                        
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-manrope">
+    <!-- header section -->
+    <header class="bg-slate-50">
+        <nav class="container mx-auto py-6">
+            <div class="navbar">
+                <div class="navbar-start">
+
+                    <i class="fa-solid fa-arrow-right bg-color-green rounded-full text-lg -rotate-45 pl-2 w-7 h-7 "></i>
+                    <a class="btn btn-ghost text-3xl font-bold">Rinterio</a>
+                </div>
+                <div class="navbar-center lg:block hidden">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-color-home text-lg font-bold">Home</a></li>
+                        <li><a class="text-color-services text-lg font-normal">Service</a></li>
+                        <li><a class="text-color-services text-lg font-normal">Portfolio</a></li>
+                        <li><a class="text-color-services text-lg font-normal">Blogs</a></li>
+                        <li><a class="text-color-services text-lg font-normal">Contact Us</a></li>
+
+                    </ul>
+                </div>
+                <div class="navbar-end md:block lg:block hidden">
+                    <div class="justify-end flex gap-4">
+                        <i class="fa-solid fa-magnifying-glass text-lg rounded-full p-1.5 bg-white"></i>
+                        <i class="fa-solid fa-cart-shopping text-lg rounded-full p-1.5 bg-white"></i>
+                        <div class="bg-color-green py-2 px-6 gap-2 w-52 rounded-3xl">
+                            <button class="text-xl font-bold">BookConsult</button>
+                            <i
+                                class="fa-solid fa-arrow-right bg-black text-white rounded-full text-lg -rotate-45 pl-1 w-6 h-6 "></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-end lg:hidden">
+                    <i class="fa-solid fa-bars text-3xl rounded-full p-3 bg-white"></i>
+                </div>
+            </div>
+        </nav>
+        <!-- banner section -->
+        <div class="container mx-auto bg-slate-50">
+            <div class="hero bg-slate-50 ">
+                <div class="hero-content text-center">
+                    <div class="">
+                        <img class="lg:pl-40 py-4" src="./assets/banner.png" alt="">
+                        <h1 class="text-6xl font-bold py-4">A barn house of this design has a <br> striking appearance</h1>
+                        <p class="py-4 text-lg font-medium">
+                            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.
+                        </p>
+                         <div class="pl-24 md:pl-64 lg:pl-80 pt-4 pb-12">
+                            <div class="bg-color-green2 py-2 px-6 gap-2 w-52 rounded-3xl">
+                                <button class="text-xl font-bold">BookConsult</button>
+                                <i
+                                    class="fa-solid fa-arrow-right bg-color-arrow text-white rounded-full text-lg -rotate-45 pl-1 w-6 h-6 "></i>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="bg-base-200">
+        <!-- design section -->
+         <div class="lg:pt-12 lg:pl-40 lg:block hidden">
+            <img src="./assets/Vector.png" alt="">
+         </div>
+        <section class="container mx-auto">
+            <div class="card lg:card-side bg-base-200 pb-12">
+               
+                <div class="card-body w-full lg:w-[50%]">
+                    <div class="bg-white py-2 px-6 gap-2 w-44 rounded-3xl">
+                        <i
+                            class="fa-solid fa-arrow-right rounded-full text-lg pl-1 w-6 h-6 "></i>
+                        <button class="text-xl font-bold">About Us</button>
+                    </div>
+                  <div>
+                    <h2 class="card-title text-4xl font-bold pt-2">We design thoughtful, <br> liveable spaces</h2>
+                  </div>
+                  <div>
+                    <p class="py-2">
+                        The barn house captivates with its blend of rustic charm and <br> 
+                        modern sophistication, featuring weathered wood, sleek metal accents.
+                    </p>
+                  </div>
+                <div class="bg-white flex gap-12 rounded-xl p-4 mb-3">
+                    <div>
+                        <img class="pt-3" src="./assets/commercial.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold pb-2">Commercial</h3>
+                        <p class="text-lg font-medium">The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                    </div>
+                </div>
+                <div class="bg-white flex gap-12 rounded-xl p-4">
+                    <div>
+                        <img class="pt-3" src="./assets/commercial.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold pb-2">Commercial</h3>
+                        <p class="text-lg font-medium">The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                    </div>
+                </div>
+                
+                  
+                </div>
+                  <div class=" w-full lg:w-[50%] lg:px-32">
+                    <img
+                      src="./assets/Rectangle.png"
+                      alt="" />
+                  </div>
+              </div>
+
+        </section>
+        <!-- Our Works Process  -->
+         <section class="container mx-auto bg-red-400">
+            <div class="text-center">
+               <div class="pl-[43%]">
+                <div class="bg-white py-2 px-6 gap-2 w-56 rounded-3xl">
+                    <i
+                        class="fa-solid fa-arrow-right rounded-full text-lg pl-1 w-6 h-6 "></i>
+                    <button class="text-xl font-bold">How we works</button>
+                </div>
+               </div>
+                <div>
+                    <h2 class="text-4xl font-bold">Our Works Process</h2>
+                </div>
+                <div class="text-lg font-medium">
+                    <p>
+                        The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.
+                    </p>
+                </div>
+            </div>
+         </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
