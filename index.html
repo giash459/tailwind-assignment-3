@@ -47,6 +47,7 @@
                         'color-main': 'rgba(30, 30, 30)',
                         'color-description': 'rgba(115, 115, 115)',
                         'color-btn2': 'rgba(171, 239, 95, 0.2)',
+                        'color-footer': 'rgb(28, 28, 28)',
 
                     },
                     backgroundImage: {
@@ -191,7 +192,7 @@
         <section class="w-11/12 mx-auto bg-base-200 mb-12 lg:flex">
             <div class="flex-1 lg:py-20">
                 <div class="text-center">
-                    
+
                     <div>
                         <h2 class="text-4xl font-bold py-6">Our Uniq Home Design</h2>
                     </div>
@@ -203,13 +204,12 @@
                     </div>
                     <div class="flex justify-center py-6">
                         <button class="flex items-center gap-2 rounded-3xl bg-white py-2 px-6 text-xl font-bold">
-                            <span>How we works</span>
-                            <i class="fa-solid fa-arrow-right rounded-full rotate-90 text-lg  pl-1 w-6 h-6 "></i>
+                            <span>Our Carousel Process</span>
+                            <i class="fa-solid fa-arrow-right rounded-full  text-lg  pl-1 w-6 h-6 "></i>
                         </button>
                     </div>
                 </div>
             </div>
-            <!--  -->
             <div class="flex-1 justify-center">
                 <div class="carousel carousel-vertical rounded-box h-96">
                     <div class="carousel-item h-full">
@@ -227,9 +227,9 @@
                     <div class="carousel-item h-full">
                         <img src="./assets/article3.png" />
                     </div>
-                    
-                    
-                   
+
+
+
                 </div>
             </div>
         </section>
@@ -532,9 +532,7 @@
                                     placeholder="Email Number*">
                             </div>
                             <div class="lg:col-span-2">
-                                <textarea class="p-4 rounded-2xl  w-full" name="" id="" rows="8"
-                                    placeholder="Write your massage here">
-                                </textarea>
+                                <textarea class="w-full rounded-2xl p-4" placeholder="Write your massage here" name="" id="" rows="8"></textarea>
                             </div>
                             <div class="lg:col-span-2 pb-12">
                                 <button
@@ -551,7 +549,27 @@
 
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer footer-center bg-color-footer text-base-content rounded p-10">
+        <div class="flex gap-0">
+            <i class="fa-solid fa-arrow-right bg-color-green rounded-full text-lg -rotate-45 pl-2 w-7 h-7 "></i>
+            <span><a class="btn btn-ghost text-3xl font-bold text-white">Rinterio</a></span>
+        </div>
+        <div>
+            <p class="text-color-description text-lg font-medium">The barn house captivates with its blend of rustic
+                charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+        </div>
+        <nav class="grid grid-cols-1 lg:flex gap-6 lg:gap-32 text-lg font-bold text-white">
+            <a class="">Home</a>
+            <a class="">Service</a>
+            <a class="">Portfolio</a>
+            <a class="">Blogs</a>
+            <a class="">Contact Us</a>
+        </nav>
+        <button class="flex items-center gap-2 bg-color-green py-2 px-6  rounded-3xl">
+            <span class="text-xl font-bold">BookConsult</span>
+            <i class="fa-solid fa-arrow-right bg-black text-white rounded-full text-lg -rotate-45 pl-1 w-6 h-6 "></i>
+        </button>
+    </footer>
 </body>
 
 </html>
