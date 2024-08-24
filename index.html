@@ -25,6 +25,13 @@
             background-size: cover;
             background-position: center;
         }
+
+        .next-projects {
+            background-image: "url('./assets/bg.jpg')";
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
     </style>
     <script>
         tailwind.config = {
@@ -41,7 +48,13 @@
                         'color-description': 'rgba(115, 115, 115)',
                         'color-btn2': 'rgba(171, 239, 95, 0.2)',
 
-                    }
+                    },
+                    backgroundImage: {
+                        'next-project': "url('./assets/bg.jpg')",
+
+
+
+                    },
                 }
             }
         }
@@ -326,7 +339,7 @@
                     </figure>
                     <div class="flex gap-4 px-4 pt-2">
                         <div>
-                             <i class="fa-solid fa-calendar-days text-xl "></i>
+                            <i class="fa-solid fa-calendar-days text-xl "></i>
                             <span><a class="text-base font-normal text-color-description">July14, 2024</a></span>
                         </div>
                         <div>
@@ -353,7 +366,7 @@
                     </figure>
                     <div class="flex gap-4 px-4 pt-2">
                         <div>
-                             <i class="fa-solid fa-calendar-days text-xl "></i>
+                            <i class="fa-solid fa-calendar-days text-xl "></i>
                             <span><a class="text-base font-normal text-color-description">July14, 2024</a></span>
                         </div>
                         <div>
@@ -380,7 +393,7 @@
                     </figure>
                     <div class="flex gap-4 px-4 pt-2">
                         <div>
-                             <i class="fa-solid fa-calendar-days text-xl "></i>
+                            <i class="fa-solid fa-calendar-days text-xl "></i>
                             <span><a class="text-base font-normal text-color-description">July14, 2024</a></span>
                         </div>
                         <div>
@@ -407,7 +420,7 @@
                     </figure>
                     <div class="flex gap-4 px-4 pt-2">
                         <div>
-                             <i class="fa-solid fa-calendar-days text-xl "></i>
+                            <i class="fa-solid fa-calendar-days text-xl "></i>
                             <span><a class="text-base font-normal text-color-description">July14, 2024</a></span>
                         </div>
                         <div>
@@ -428,9 +441,62 @@
 
                     </div>
                 </div>
-                
+
 
             </div>
+        </section>
+        <!-- Let’s Discuss Next Project section -->
+        <section>
+            <div class="bg-next-project bg-no-repeat bg-cover bg-center  border-4 border-white">
+                <div class="w-11/12 mx-auto">
+                    <div class="text-center pt-16 pb-6">
+                        <div class="flex justify-center">
+                            <button
+                                class="flex items-center gap-2 rounded-3xl bg-color-btn2 py-2 px-6 text-xl font-bold">
+                                <i class="fa-solid fa-arrow-right rounded-full text-lg  pl-1 w-6 h-6 "></i>
+                                <span>Let's Concept</span>
+                            </button>
+                        </div>
+                        <div>
+                            <h2 class="text-4xl font-bold py-6">Let's Discuss Next Project</h2>
+                        </div>
+                        <div class="text-lg font-medium">
+                            <p>
+                                The barn house captivates with its blend of rustic charm and modern sophistication, <br>
+                                featuring weathered wood, sleek metal accents.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 mx-auto lg:text-center lg:col-span-2">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                            <div>
+                                <input class="p-4 rounded-3xl  w-full" type="text" name="" id="" placeholder="First Name*">
+                            </div>
+                            <div>
+                                <input class="p-4 rounded-full w-full" type="text" name="" id="" placeholder="Last Name*">
+                            </div>
+                            <div>
+                                <input class="p-4 rounded-full  w-full" type="text" name="" id="" placeholder="Phone Number*">
+                            </div>
+                            <div>
+                                <input class="p-4 rounded-full  w-full" type="text" name="" id="" placeholder="Email Number*">
+                            </div>
+                            <div class="lg:col-span-2">
+                                <textarea class="p-4 rounded-2xl  w-full" name="" id="" rows="8" placeholder="Write your massage here">
+                                </textarea>
+                            </div>
+                            <div class="lg:col-span-2 pb-12">
+                                <button class="flex items-center justify-center w-full gap-2 bg-color-green py-2 px-6 rounded-3xl">
+                                    <span class="text-xl font-bold">Send Mail</span>
+                                    <i
+                                        class="fa-solid fa-arrow-right bg-black text-white rounded-full text-base -rotate-45 pl-1 w-6 h-6 "></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
         </section>
     </main>
     <footer></footer>
